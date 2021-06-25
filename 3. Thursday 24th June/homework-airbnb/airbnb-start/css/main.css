@@ -1,0 +1,175 @@
+/*
+google font: Nunito
+
+brand red: #ff5358
+dark red: #e00007
+background grey: #efefef
+title grey: #edefed
+footer grey: #2B2D2E
+*/
+
+/* Main elements */
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  /* Googled "How to change curser css" */
+  cursor: pointer;
+  font-size: 20px;
+  color: #000000;
+}
+
+p {
+  font-size: 20px;
+}
+
+section {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.button {
+  display: inline;
+  padding: 15px 60px;
+  background: #ff5358;
+  color: #ffffff;
+  border-radius: 5px;
+  border-bottom: 3px solid #e00007;
+  font-weight: bold;
+}
+
+.button a {
+  color: #ffffff;
+}
+
+.button:hover {
+  /* Googled "change background when hover css*/
+  background: #e00007;
+}
+
+/* Header / Navigation */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+/* Main content */
+
+.main-content {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  background-image: url("/airbnb-start/images/melbourne.jpg");
+  background-size: cover;
+}
+
+.main-content p {
+  width: 500px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Locals content - flex boxes will not move - frustrated */
+
+.locals {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 50px 10px;
+  text-align: left;
+  border: 1px solid #ffffff;
+  width: 50%;
+  border-color: lightgray;
+}
+
+.locals-title {
+  background-color: #edefed;
+  margin: 0;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.locals-body {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Locations - it is very late in the evening and my brain has stopped working */
+
+.locaition {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.fitzroy {
+  background-image: url("/airbnb-start/images/fitzroy.jpg");
+}
+
+.st-kilda {
+  background-image: url("/airbnb-start/images/st-kilda.jpg");
+}
+
+.cbd {
+  background-image: url("/airbnb-start/images/central-business-district.jpg");
+}
+
+/* Footer */
+
+footer {
+  color: #ffffff;
+  background: #2b2d2e;
+  padding: 60px;
+}
+
+footer p {
+  padding-top: 30px;
+  border-top: 1px solid #ffffff;
+}
