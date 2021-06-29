@@ -1,0 +1,199 @@
+/*background color = #fafafa*/
+/*button blue = #3897f0*/
+/*border color = #e6e6e6*/
+/*footer link color = #003569*/
+/*text grey color = #999*/
+
+/* THE MAJORITY OF THE SIZING WAS TAKEN FROM THE COMPLETE VERSION AS I NEEDED ASSIATNCE */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Elements*/
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: #fafafa;
+}
+
+input {
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  display: flex;
+  text-align: center;
+  margin: 45px 0 55px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #999;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+section {
+  flex: 1;
+}
+
+section:first-of-type {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 20px 40px 0;
+  width: 375px;
+}
+
+section:first-of-type > img {
+  height: auto;
+  max-width: 100%;
+}
+
+section:last-of-type {
+  display: flex;
+  width: 350px;
+}
+
+/* Form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.sign-up,
+.existing-account {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.existing-account {
+  padding: 25px 40px;
+}
+
+.sign-up {
+  padding: 35px 40px;
+  margin-bottom: 10px;
+}
+
+.sign-up p,
+.sign-up p a,
+.line-container p,
+footer ul li {
+  color: #999;
+}
+
+.sign-up p a {
+  font-weight: bold;
+}
+
+.sign-up .bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.bar-container p {
+  flex: 2;
+  font-weight: bold;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.bar {
+  flex: 5;
+  background-color: #efefef;
+  height: 1px;
+}
+
+.download-buttons {
+  margin-top: 40px;
+}
+
+.download-buttons p {
+  margin-bottom: 20px;
+}
+
+.download-buttons img:first-of-type {
+  margin-right: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+button,
+input[type="submit"] {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #3897f0;
+  border: 0;
+  border-color: #e6e6e6;
+  border-radius: 2px;
+  width: 100%;
+  line-height: 28px;
+}
+
+button,
+input[type="submit"] {
+  /* Previously googled how to change the cursor type for the airbnb homework */
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+
+footer ul {
+  display: flex;
+  max-width: 935px;
+  width: 100%;
+}
+
+footer ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 10px;
+  line-height: 1.5;
+}
+
+footer ul li:last-of-type {
+  margin: 0 0 0 auto;
+}
+
+footer ul li a {
+  color: #003569;
+}
+
+/* Media query */
+/* Structure taken from flexbox layout lession lab - query is incorrect as it does not work :'( */
+@media (max-width: 600px) {
+  .hero {
+    display: block;
+  }
+}
