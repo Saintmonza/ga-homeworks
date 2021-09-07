@@ -1,0 +1,21 @@
+{
+  "name": "express-homework-one",
+  "version": "1.0.0",
+  "description": "express homework one",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homework",
+    "express",
+    "movies",
+    "remake"
+  ],
+  "type": "module",
+  "author": "Lillian Monza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
