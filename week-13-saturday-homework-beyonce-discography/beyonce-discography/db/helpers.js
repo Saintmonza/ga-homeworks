@@ -1,8 +1,13 @@
 import mongoose from 'mongoose';
-import { dbUri } from '../config/environment.js';
+import { dbURI } from '../config/environment.js';
 
 export function connectDb() {
-  return mongoose.connect(dbUri);
+  const opts = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  };
+  return mongoose.connect(dbURI, opts);
 }
 
 export function truncateDb() {
